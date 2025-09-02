@@ -1,13 +1,16 @@
 <script>
   import { Box } from "svelte-elegant";
+
+  export let href;
 </script>
 
-<div class="box-container">
+<a {href} class="box-container">
   <Box width="100%" height="100%" variant="Hoverable"><slot /></Box>
-</div>
+</a>
 
 <style>
   .box-container {
+    text-decoration: none;
     width: 250px;
     height: 250px;
   }

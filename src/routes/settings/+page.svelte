@@ -3,42 +3,16 @@
   import { goto } from "$app/navigation";
   import { onMount } from "svelte";
 
-  // Загружаем значение из localStorage или используем true по умолчанию
-  let difficultyLevels = "";
-  let trainingTime = "";
-
-  let isInitialized = false;
-
-  onMount(() => {
-    difficultyLevels = "Medium";
-    isInitialized = true;
-    let storedTime = localStorage.getItem("time");
-
-    if (storedTime) {
-      trainingTime = storedTime;
-    } else {
-      trainingTime = "1";
-    }
-  });
-
-  function navigate(link) {
-    goto(link);
-  }
-
-  $: {
-    if (Number(trainingTime) > 60) {
-      trainingTime = "60";
-    }
-  }
+  onMount(() => {});
 </script>
 
 <div class="container">
-  <a href="https://math-trainer-lime.vercel.app">
-    <ProjectBox>Math Trainer</ProjectBox>
-  </a>
-  <a href="https://memory-trainer-five.vercel.app">
-    <ProjectBox>Memory Trainer</ProjectBox>
-  </a>
+  <ProjectBox href="https://math-trainer-lime.vercel.app">
+    Math Trainer
+  </ProjectBox>
+  <ProjectBox href="https://memory-trainer-five.vercel.app">
+    Memory Trainer
+  </ProjectBox>
 </div>
 
 <style>
