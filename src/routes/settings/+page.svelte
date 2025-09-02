@@ -22,6 +22,7 @@
     align-items: center;
     width: 100vw;
     gap: 10px;
+    flex-wrap: wrap; /* ← Это переносит на новую строку */
   }
 
   .content {
