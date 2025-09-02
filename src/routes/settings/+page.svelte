@@ -94,6 +94,26 @@
       </div>
     </div>
   </ProjectBox>
+  <ProjectBox href="https://sql-viewer-delta.vercel.app">
+    <div class="content">
+      <div>
+        <span style:color={$themeStore.palette.primary}>SQL</span>
+        <span> Viewer </span>
+      </div>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        Manage your database using the web interface..
+      </p>
+      <img
+        width="100px"
+        height="100px"
+        src="https://svelte-elegant.vercel.app/large/light.png"
+      />
+    </div>
+  </ProjectBox>
   <ProjectBox href="https://answer-generator-five.vercel.app">
     <div class="content">
       <div>
@@ -112,8 +132,56 @@
         height="100px"
         src="https://answer-generator-five.vercel.app/dice-2.png"
       />
-    </div></ProjectBox
-  >
+    </div>
+  </ProjectBox>
+  <ProjectBox href="https://github.com/Myslitel666/English-Assistant">
+    <div class="content">
+      <div>
+        <span style:color={$themeStore.palette.primary}>English</span>
+        <span> Assistant </span>
+      </div>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        Automate English language learning.
+      </p>
+      <img width="100px" height="100px" src="/light-mega2.png" alt="En" />
+    </div>
+  </ProjectBox>
+  <ProjectBox href="https://github.com/Myslitel666/English-Assistant">
+    <div class="content">
+      <div>
+        <span style:color={$themeStore.palette.primary}>Task</span>
+        <span> Manager </span>
+      </div>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        Keep productivity monitoring.
+      </p>
+      <img width="100px" height="100px" src="/light-mega.png" alt="En" />
+    </div>
+  </ProjectBox>
+  <ProjectBox href="https://github.com/Myslitel666">
+    <div class="content">
+      <div>
+        <span style:color={$themeStore.palette.primary}>Smart</span>
+        <span> Investor</span>
+      </div>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        Calculate the compound interest on deposits.
+      </p>
+      <img width="100px" height="100px" src="/Smart-Investor.png" alt="En" />
+    </div>
+  </ProjectBox>
 </div>
 
 <style>
