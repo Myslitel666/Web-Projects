@@ -1,5 +1,5 @@
 <script>
-  import { Button, AutoComplete, TextField, Box } from "svelte-elegant";
+  import ProjectBox from "./ProjectBox.svelte";
   import { goto } from "$app/navigation";
   import { onMount } from "svelte";
 
@@ -33,52 +33,12 @@
 </script>
 
 <div class="container">
-  <div class="content">
-    <p
-      style:font-size="1.2rem"
-      style:font-weight="500"
-      style:margin-bottom="0.12rem"
-    >
-      Select Mode
-    </p>
-    <div class="switch-container">
-      <p class="width">Time (min):</p>
-      <div style:margin-left="0.5rem">
-        <TextField
-          label="Training time"
-          oninput={(e) => {
-            trainingTime = e.target.value.replace(/\D/g, "");
-          }}
-          width="12.5rem"
-          bind:value={trainingTime}
-        />
-      </div>
-    </div>
-    <div class="switch-container">
-      <p class="width">Difficulty Levels:</p>
-      <div style:margin-left="0.5rem">
-        <AutoComplete
-          isSelect
-          label="Memory Items"
-          width="12.5rem"
-          bind:value={difficultyLevels}
-          options={["Easy", "Medium", "Hard"]}
-        />
-      </div>
-    </div>
-    <div class="mgn-top" style:width="100%">
-      <Button
-        width="100%"
-        onClick={() => {
-          localStorage.setItem("difficultyLevels", difficultyLevels);
-          localStorage.setItem("time", trainingTime);
-          navigate("/home");
-        }}
-      >
-        Ready to Go!
-      </Button>
-    </div>
-  </div>
+  <a href="https://math-trainer-lime.vercel.app">
+    <ProjectBox>Math Trainer</ProjectBox>
+  </a>
+  <a href="https://memory-trainer-five.vercel.app">
+    <ProjectBox>Memory Trainer</ProjectBox>
+  </a>
 </div>
 
 <style>
@@ -87,6 +47,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    gap: 10px;
   }
 
   .content {
