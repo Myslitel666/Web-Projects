@@ -94,7 +94,7 @@
       </div>
     </div>
   </ProjectBox>
-  <ProjectBox href="https://sql-viewer-delta.vercel.app">
+  <ProjectBox href="/database.png">
     <div class="content">
       <div>
         <span style:color={$themeStore.palette.primary}>SQL</span>
