@@ -105,7 +105,7 @@
         style:text-align="justify"
         style:text-justify="inter-word"
       >
-        Manage your database using the web interface..
+        Manage your database using the web interface.
       </p>
       <img
         width="100px"
@@ -150,7 +150,7 @@
       <img width="100px" height="100px" src="/light-mega2.png" alt="En" />
     </div>
   </ProjectBox>
-  <ProjectBox href="https://github.com/Myslitel666/English-Assistant">
+  <ProjectBox href="https://task-manager-six-sand-70.vercel.app">
     <div class="content">
       <div>
         <span style:color={$themeStore.palette.primary}>Task</span>
