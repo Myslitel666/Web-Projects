@@ -94,7 +94,7 @@
       </div>
     </div>
   </ProjectBox>
-  <ProjectBox href="/database.png">
+  <ProjectBox href="https://sql-viewer-delta.vercel.app">
     <div class="content">
       <div>
         <span style:color={$themeStore.palette.primary}>SQL</span>
@@ -107,11 +107,7 @@
       >
         Manage your database using the web interface.
       </p>
-      <img
-        width="100px"
-        height="100px"
-        src="https://svelte-elegant.vercel.app/large/light.png"
-      />
+      <img width="100px" height="100px" src="/database.png" />
     </div>
   </ProjectBox>
   <ProjectBox href="https://answer-generator-five.vercel.app">
