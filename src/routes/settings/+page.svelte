@@ -1,6 +1,6 @@
 <script>
   import ProjectBox from "./ProjectBox.svelte";
-  import { goto } from "$app/navigation";
+  import { themeStore } from "svelte-elegant/stores";
   import { onMount } from "svelte";
 
   onMount(() => {});
@@ -8,28 +8,52 @@
 
 <div class="container">
   <ProjectBox href="https://math-trainer-lime.vercel.app">
-    Math Trainer
+    <div class="content">
+      <span style:color={$themeStore.palette.primary}>Math Trainer </span>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        The simulator for solving mathematical examples.
+      </p>
+      <p>Solve the example:</p>
+      <div>
+        <span>125 </span>
+        <span style:color={$themeStore.palette.primary}>÷</span>
+        <span>5</span>
+        <span style:color={$themeStore.palette.primary}>= ••</span>
+      </div>
+    </div>
   </ProjectBox>
   <ProjectBox href="https://memory-trainer-five.vercel.app">
-    Memory Trainer
+    <div class="content">
+      <span style:color={$themeStore.palette.primary}>Memory Trainer</span>
+      <p>Repeat the number:</p>
+    </div>
   </ProjectBox>
 </div>
 
 <style>
   .container {
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    gap: 10px;
     flex-wrap: wrap; /* ← Это переносит на новую строку */
+    gap: 10px;
   }
 
   .content {
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
   }
 
   .width {

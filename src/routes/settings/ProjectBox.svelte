@@ -5,7 +5,9 @@
 </script>
 
 <a {href} class="box-container">
-  <Box width="100%" height="100%" variant="Hoverable"><slot /></Box>
+  <Box width="100%" height="100%" variant="Hoverable" padding="20px"
+    ><slot /></Box
+  >
 </a>
 
 <style>
