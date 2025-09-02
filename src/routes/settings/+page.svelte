@@ -9,7 +9,10 @@
 <div class="container">
   <ProjectBox href="https://math-trainer-lime.vercel.app">
     <div class="content">
-      <span style:color={$themeStore.palette.primary}>Math Trainer </span>
+      <div>
+        <span style:color={$themeStore.palette.primary}>Math</span>
+        <span> Trainer </span>
+      </div>
       <p
         style:font-size="16px"
         style:text-align="justify"
@@ -28,8 +31,21 @@
   </ProjectBox>
   <ProjectBox href="https://memory-trainer-five.vercel.app">
     <div class="content">
-      <span style:color={$themeStore.palette.primary}>Memory Trainer</span>
+      <div>
+        <span style:color={$themeStore.palette.primary}>Memory</span>
+        <span> Trainer </span>
+      </div>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        The simulator for memory training.
+      </p>
       <p>Repeat the number:</p>
+      <div>
+        <span style:color={$themeStore.palette.primary}>7053482</span>
+      </div>
     </div>
   </ProjectBox>
 </div>
@@ -50,6 +66,7 @@
     width: 100%;
     font-size: 24px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 10px;
