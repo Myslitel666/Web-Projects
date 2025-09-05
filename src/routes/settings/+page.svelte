@@ -110,7 +110,7 @@
       <img width="100px" height="100px" src="/database.png" />
     </div>
   </ProjectBox>
-  <ProjectBox href="https://answer-generator-five.vercel.app">
+  <ProjectBox href="/dice-2.png">
     <div class="content">
       <div>
         <span style:color={$themeStore.palette.primary}>Answer</span>
