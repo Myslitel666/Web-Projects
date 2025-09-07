@@ -2,6 +2,7 @@
   import ProjectBox from "./ProjectBox.svelte";
   import { themeStore } from "svelte-elegant/stores";
   import { onMount } from "svelte";
+  import { Stopwatch } from "svelte-elegant/icons-elegant";
 
   onMount(() => {});
 </script>
@@ -176,6 +177,22 @@
         Calculate the compound interest on deposits.
       </p>
       <img width="100px" height="100px" src="/Smart-Investor.png" alt="En" />
+    </div>
+  </ProjectBox>
+  <ProjectBox href="https://stopwatch-liard-zeta.vercel.app">
+    <div class="content">
+      <div>
+        <span style:color={$themeStore.palette.primary}>Stop</span>
+        <span style:margin-left="-5px">watch</span>
+      </div>
+      <p
+        style:font-size="16px"
+        style:text-align="justify"
+        style:text-justify="inter-word"
+      >
+        The device for measuring elapsed time.
+      </p>
+      <Stopwatch size="90px" />
     </div>
   </ProjectBox>
 </div>

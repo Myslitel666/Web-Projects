@@ -21,6 +21,6 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"svelte-elegant": "^1.7.21"
+		"svelte-elegant": "^1.7.31"
 	}
 }
