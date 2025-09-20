@@ -111,7 +111,7 @@
       <img width="100px" height="100px" src="/database.png" />
     </div>
   </ProjectBox>
-  <ProjectBox href="/dice-2.png">
+  <ProjectBox href="https://answer-generator-five.vercel.app">
     <div class="content">
       <div>
         <span style:color={$themeStore.palette.primary}>Answer</span>
@@ -124,14 +124,10 @@
       >
         Generate an answer to your question.
       </p>
-      <img
-        width="100px"
-        height="100px"
-        src="https://answer-generator-five.vercel.app/dice-2.png"
-      />
+      <img width="100px" height="100px" src="/dice-2.png" alt="Logo" />
     </div>
   </ProjectBox>
-  <ProjectBox href="https://github.com/Myslitel666/English-Assistant">
+  <ProjectBox href="https://english-assistant.vercel.app/home">
     <div class="content">
       <div>
         <span style:color={$themeStore.palette.primary}>English</span>
